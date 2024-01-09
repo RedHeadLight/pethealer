@@ -46,8 +46,8 @@
         </section>
         <section class="catalog-form">
             <div class="catalog-form__container container">
-                <div class="catalog-form__texts form-texts">
-                    <h2 class="form-texts__title">Записаться на приём
+                <div class="catalog-form__texts">
+                    <h2 class="catalog-form__title">Записаться на приём
                         к сосудистому хирургу</h2>
                     <p>Наш администратор свяжется с вами, определит наиболее подходящую клинику, врача, удобное время и
                         запишет на приём.</p>
@@ -68,6 +68,7 @@
                         <p>Нажимая на кнопку выше, вы даёте согласие на то, что вы ознакомились и согласны с Условиями
                             конфиденциальности</p>
                     </div>
+                </form>    
         </section>
         <section class="catalog-advantages">
             <div class="catalog-advantages__container container">
@@ -93,183 +94,187 @@
                 </ul>
                 <div class="catalog-advantages__main advantages-main">
                     <h2 class="advantages-main__title">Выбрать врача самостоятельно</h2>
+                    <div class="tags-item__checkboxes checkboxes">
+                        <div class="checkboxes__wrapper">
+                            <input class="checkboxes__input" type="radio" name="categorees" id="all" checked>
+                            <label class="checkboxes__label" for="all">
+                        </div>
+                        <div class="checkboxes__wrapper">
+                            <input class="checkboxes__input" type="radio" name="categorees" id="adult">
+                            <label class="checkboxes__label" for="adult">
+                        </div>
+                        <div class="checkboxes__wrapper">
+                            <input class="checkboxes__input" type="radio" name="categorees" id="kids"
+                                checked>
+                            <label class="checkboxes__label" for="kids">
+                        </div>
+                    </div>
                     <ul class="about-main__tags-list tags-list">
-                        <li class="tags-list__item tags-item">
-                            <div class="tags-item__checkboxes checkboxes">
-                                <div class="checkboxes__wrapper">
-                                    <input class="checkboxes__input" type="checkbox" name="categorees" id="all" checked>
-                                    <label class="checkboxes__label" for="all">
-                                </div>
-                                <div class="checkboxes__wrapper">
-                                    <input class="checkboxes__input" type="checkbox" name="categorees" id="adult">
-                                    <label class="checkboxes__label" for="adult">
-                                </div>
-                                <div class="checkboxes__wrapper">
-                                    <input class="checkboxes__input" type="checkbox" name="categorees" id="kids"
-                                        checked>
-                                    <label class="checkboxes__label" for="kids">
-                                </div>
-                            </div>
-                        </li>
                         <li class="tags-list__item tags-item tags-item--checked">
-                            <span>Махачкала</span>
+                            <button class="tags-item__button" type="button">Махачкала</button>
                             <svg></svg>
                         </li>
                         <li class="tags-list__item tags-item tags-item--checked">
-                            <span>терапевт</span>
+                            <button class="tags-item__button" type="button">терапевт</button>
                             <svg></svg>
                         </li>
                         <li class="tags-list__item tags-item">
-                            <span>врач высшей категории</span>
+                            <button class="tags-item__button" type="button">врач высшей категории</button>
                             <svg></svg>
                         </li>
                         <li class="tags-list__item tags-item">
-                            <span>приём в ближайшие дни</span>
+                            <button class="tags-item__button" type="button">приём в ближайшие дни</button>
                             <svg></svg>
                         </li>
                         <li class="tags-list__item tags-item">
-                            <span>венеролог</span>
+                            <button class="tags-item__button" type="button">венеролог</button>
                             <svg></svg>
                         </li>
                     </ul>
-                    <ul class="advantages-main__cards-list advantages-cards">
-                        <li class="advantages-cards__item cards-item">
-                            <div class="cards-item__name card-name">
+                    <ul class="advantages-main__doctor-list doctor-list">
+                        <li class="doctor-list__card doctor-card">
+                            <div class="doctor-card__name">
                                 <img>
                                 <span>Магомедва
                                     Патимат
                                     Курбанисмаиловна</span>
                             </div>
-                            <div class="card-name__points">
+                            <div class="doctor-card__points">
                                 <span>Стаж:</span>
                                 <b>41 лет</b>
                             </div>
-                            <div class="card-name__points card-points">
+                            <div class="doctor-card__points">
                                 <span>Отзывы:</span>
                                 <svg></svg>
                                 <b>34</b>
                             </div>
                             <p>Акушер, гинеколог-эндокринолог, УЗИ, кольпоскопист, УЗИ внутренних органов, УЗИ
                                 гинекологии, ювениолог</p>
-                            <div class="card-name__footer">
+                            <div class="doctor-card__addresses">
                                 <span>Ведёт приём по адресу:</span>
                                 <b>Махачкала, ул. Ляхова, 22/24</b>
                                 <b>Махачкала, ул. Советская, 11</b>
                             </div>
+                            <button class="doctor-card__button" type="button">Записаться на приём</button>
                         </li>
-                        <li class="advantages-cards__item cards-item">
-                            <div class="cards-item__name card-name">
+                        <li class="doctor-list__card doctor-card">
+                            <div class="doctor-card__name">
                                 <img>
                                 <span>Нурмагомедова
                                     Мариям
                                     Ибрагимовна</span>
                             </div>
-                            <div class="card-name__points">
+                            <div class="doctor-card__points">
                                 <span>Стаж:</span>
                                 <b>9 лет</b>
                             </div>
-                            <div class="card-name__points card-points">
+                            <div class="doctor-card__points">
                                 <span>Отзывы:</span>
                                 <svg></svg>
                                 <b>11</b>
                             </div>
                             <p>Венеролог, дерматолог, трихолог</p>
-                            <div class="card-name__footer">
+                            <div class="doctor-card__addresses">
                                 <span>Ведёт приём по адресу:</span>
                                 <b>Махачкала, ул. Абдулы Алиева, 4А</b>
                                 <b>Махачкала, ул. Ляхова, 22, 24</b>
                             </div>
+                            <button class="doctor-card__button" type="button">Записаться на приём</button>
                         </li>
-                        <li class="advantages-cards__item cards-item">
-                            <div class="cards-item__name card-name">
+                        <li class="doctor-list__card doctor-card">
+                            <div class="doctor-card__name">
                                 <img>
                                 <span>Магомедрасулова
                                     Написат
                                     Султановна</span>
-                                <div class="card-name__points">
+                                <div class="doctor-card__points">
                                     <span>Стаж:</span>
                                     <b>9 лет</b>
                                 </div>
-                                <div class="card-name__points card-points">
+                                <div class="doctor-card__points">
                                     <span>Отзывы:</span>
                                     <svg></svg>
                                     <b>11</b>
                                 </div>
                                 <p>хирург-онколог</p>
-                                <div class="card-name__footer">
+                                <div class="doctor-card__addresses">
                                     <span>Ведёт приём по адресу:</span>
                                     <b>Махачкала, ул. Ляхова, 22/24</b>
                                 </div>
                             </div>
+                            <button class="doctor-card__button" type="button">Записаться на приём</button>
                         </li>
-                        <li class="advantages-cards__item cards-item">
-                            <div class="cards-item__name card-name">
+                        <li class="doctor-list__card doctor-card">
+                            <div class="doctor-card__name">
                                 <img>
                                 <span>Магомедва
                                     Патимат
                                     Курбанисмаиловна</span>
                             </div>
-                            <div class="card-name__points">
+                            <div class="doctor-card__points">
                                 <span>Стаж:</span>
                                 <b>41 лет</b>
                             </div>
-                            <div class="card-name__points card-points">
+                            <div class="doctor-card__points">
                                 <span>Отзывы:</span>
                                 <svg></svg>
                                 <b>34</b>
                             </div>
                             <p>Акушер, гинеколог-эндокринолог, УЗИ, кольпоскопист, УЗИ внутренних органов, УЗИ
                                 гинекологии, ювениолог</p>
-                            <div class="card-name__footer">
+                            <div class="doctor-card__addresses">
                                 <span>Ведёт приём по адресу:</span>
                                 <b>Махачкала, ул. Ляхова, 22/24</b>
                                 <b>Махачкала, ул. Советская, 11</b>
                             </div>
+                            <button class="doctor-card__button" type="button">Записаться на приём</button>
                         </li>
-                        <li class="advantages-cards__item cards-item">
-                            <div class="cards-item__name card-name">
+                        <li class="doctor-list__card doctor-card">
+                            <div class="doctor-card__name">
                                 <img>
                                 <span>Нурмагомедова
                                     Мариям
                                     Ибрагимовна</span>
                             </div>
-                            <div class="card-name__points">
+                            <div class="doctor-card__points">
                                 <span>Стаж:</span>
                                 <b>9 лет</b>
                             </div>
-                            <div class="card-name__points card-points">
+                            <div class="doctor-card__points">
                                 <span>Отзывы:</span>
                                 <svg></svg>
                                 <b>11</b>
                             </div>
                             <p>Венеролог, дерматолог, трихолог</p>
-                            <div class="card-name__footer">
+                            <div class="doctor-card__addresses">
                                 <span>Ведёт приём по адресу:</span>
                                 <b>Махачкала, ул. Абдулы Алиева, 4А</b>
                                 <b>Махачкала, ул. Ляхова, 22, 24</b>
                             </div>
+                            <button class="doctor-card__button" type="button">Записаться на приём</button>
                         </li>
-                        <li class="advantages-cards__item cards-item">
-                            <div class="cards-item__name card-name">
+                        <li class="doctor-list__card doctor-card">
+                            <div class="doctor-card__name">
                                 <img>
                                 <span>Магомедрасулова
                                     Написат
                                     Султановна</span>
-                                <div class="card-name__points">
+                                <div class="doctor-card__points">
                                     <span>Стаж:</span>
                                     <b>9 лет</b>
                                 </div>
-                                <div class="card-name__points card-points">
+                                <div class="doctor-card__points">
                                     <span>Отзывы:</span>
                                     <svg></svg>
                                     <b>11</b>
                                 </div>
                                 <p>хирург-онколог</p>
-                                <div class="card-name__footer">
+                                <div class="doctor-card__addresses">
                                     <span>Ведёт приём по адресу:</span>
                                     <b>Махачкала, ул. Ляхова, 22/24</b>
                                 </div>
                             </div>
+                            <button class="doctor-card__button" type="button">Записаться на приём</button>
                         </li>
                     </ul>
                     <button class="price-list__button" type="button">Смотреть всех<svg></svg></button>
@@ -278,7 +283,7 @@
         </section>
         <section class="catalog-price-list">
             <div class="catalog-price-list__container container">
-                <div class="price-list__wrapper">
+                <div class="catalog-price-list__wrapper">
                     <h2 class="catalog-price-list__title">Прайс-лист</h2>
                     <ul class="catalog-price-list price-list">
                         <li class="price-list__item">
@@ -328,7 +333,7 @@
                     </ul>
                     <button class="price-list__button" type="button">Показать ещё</button>
                 </div>
-                <div class="price-list__banner">
+                <div class="catalog-price-list__banner">
                     <img>
                     <span>Получи скидку -50% на третью услугу</span>
                     <b>Акция действует до 28 октября</b>
@@ -361,9 +366,9 @@
             <div class="catalog-about__container container">
                 <h2 class="about-main__title">Немного об УЗИ внутренних органов</h2>
                 <div class="catalog-about__main about-main">
-                    <ul class="about-main__articles main-articles">
-                        <li class="main-articles__item">
-                            <span>УЗИ почек в Махачкале: как делают?</span>
+                    <div class="about-main__articles main-articles">
+                        <div class="main-articles__item">
+                            <h3>УЗИ почек в Махачкале: как делают?</h3>
                             <p>Скорее всего, каждый человек в своей жизни хоть раз делал УЗИ, все же есть и такие,
                                 которые ни разу не пользовались данной процедурой и им интересно, как она проходит.
                                 Есть несколько методов УЗИ, самый распространенный – это сканирование. Сначала на нужную
@@ -373,9 +378,9 @@
                                 можно смыть и получить результаты УЗИ.
                                 Отметим, что данная процедура абсолютно безболезненна, никакого дискомфорта пациент не
                                 испытывает.</p>
-                        </li>
-                        <li class="main-articles__item">
-                            <span>УЗИ почек и мочевого пузыря</span>
+                        </div>
+                        <div class="main-articles__item">
+                            <h3>УЗИ почек и мочевого пузыря</h3>
                             <p>Ультразвуковое исследование можно проводить на все органы человека, кроме легких. Дело в
                                 том, что легкие, как и кости человека, не поддаются воздействию ультразвуковых лучей,
                                 как раз по этому диагностировать что-либо попросту невозможно.
@@ -384,9 +389,9 @@
                                 рассматривается величина почек, а также четкость их очертаний.
                                 Что касается УЗИ мочевого пузыря, то данная процедура позволяет выявить такие
                                 показатели, как наличие новообразований, песка, а также камней.</p>
-                        </li>
-                        <li class="main-articles__item">
-                            <span>УЗИ расшифровка</span>
+                        </div>
+                        <div class="main-articles__item">
+                            <h3>УЗИ расшифровка</h3>
                             <p>Расшифровка УЗИ – это письменный документ, в котором указывается описание внутренних
                                 органов, их размер, положение, наличие в них каких-либо отклонений и новообразований.
                                 Вовремя сделанное УЗИ позволит оперативно начать лечение на ранней стадии, и увеличить
@@ -394,9 +399,9 @@
                                 Важно отметить, что делать УЗИ должен только высококвалифицированный специалист, иначе
                                 возможны различные ошибки, как при самой процедуре, так и при расшифровке результатов.
                             </p>
-                        </li>
-                        <li class="main-articles__item">
-                            <span>Сколько стоит УЗИ внутренних органов в Махачкале и Дербенте</span>
+                        </div>
+                        <div class="main-articles__item">
+                            <h3>Сколько стоит УЗИ внутренних органов в Махачкале и Дербенте</h3>
                             <p>Цены на УЗИ во всех поликлиниках разные, Если Вы решили выбрать нашу поликлинику, то
                                 приглашаем ознакомиться с разделом «услуги».
                                 В нашей поликлинике «Целитель» есть все необходимые материалы и аппаратура, которая
@@ -404,8 +409,8 @@
                                 Кроме того, у нас работают лучшие специалисты, которые имеют за плечами большой опыт
                                 работы, а потому Вы можете быть уверены, что любую процедуру здесь проведут качественно.
                             </p>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                     <ul class="about-main__widget main-widget">
                         <li class="main-widget__item widget-item">
                             <img>
@@ -416,13 +421,13 @@
                         <li class="main-widget__item widget-item">
                             <div class="widget-item__wrapper">
                                 <img>
-                                <div class="widget-item__name-wrapper name-wrapper">
+                                <div class="widget-item__name-wrapper">
                                     <span>Тумалаева Наида Ганипаевна</span>
                                     <span>невропатолог, невропатолог, </span>
                                 </div>
                             </div>
                             <img>
-                            <div class="widget-item__desc-wrapper desc-wrapper">
+                            <div class="widget-item__desc-wrapper">
                                 <span>Заращение сагиттального шва</span>
                                 <p>Данная степень выраженности нарушений варьируется от сроков преждевременного
                                     зарастания одного шва...</p>
@@ -436,30 +441,30 @@
                     </ul>
                 </div>
                 <div class="catalog-about__footer about-footer">
-                    <div class="about-footer__main footer-main">
-                        <h3 class="footer-main__title">Клиники “Целитель”
+                    <div class="about-footer__main">
+                        <h3 class="about-footer__title">Клиники “Целитель”
                             оснащена единой информационной медицинской системой:</h3>
-                        <span class="footer-main__subtitle">Электронное хранение истории болезни, возможность переноса
+                        <span class="about-footer__subtitle">Электронное хранение истории болезни, возможность переноса
                             снимков, анализов, заключений врача на электронные носители.</span>
                         <img>
                     </div>
-                    <div class="about-footer__desc footer-desc">
-                        <h3 class="footer-desc__title">Полный цикл предоставления медицинских услуг:</h3>
-                        <ul class="footer-desc__list desc-list">
-                            <li class="desc-list__item">
-                                <a class="desc-list__link">Профилактика</a>
+                    <div class="about-footer__desc">
+                        <h3 class="about-footer__title">Полный цикл предоставления медицинских услуг:</h3>
+                        <ul class="about-footer__list">
+                            <li class="about-footer__item">
+                                <a class="about-footer__link">Профилактика</a>
                             </li>
-                            <li class="desc-list__item">
-                                <a class="desc-list__link">Амбулаторно-поликлиническое обслуживание</a>
+                            <li class="about-footer__item">
+                                <a class="about-footer__link">Амбулаторно-поликлиническое обслуживание</a>
                             </li>
-                            <li class="desc-list__item">
-                                <a class="desc-list__link">Диагностика</a>
+                            <li class="about-footer__item">
+                                <a class="about-footer__link">Диагностика</a>
                             </li>
-                            <li class="desc-list__item">
-                                <a class="desc-list__link">Стационарное лечение</a>
+                            <li class="about-footer__item">
+                                <a class="about-footer__link">Стационарное лечение</a>
                             </li>
                         </ul>
-                        <a class="footer-desc__button">Записаться на приём</a>
+                        <a class="about-footer__button">Записаться на приём</a>
                     </div>
                 </div>
             </div>
@@ -468,17 +473,17 @@
             <div class="catalog-address-list__container container">
                 <h2 class="catalog-address-list__title">Адреса наших клиник</h2>
                 <ul class="catalog-address-list__buttons address-buttons">
-                    <li class="address-buttons__item buttons-item">
-                        <button class="buttons-item__button" type="button">Махачкала</button>
+                    <li class="address-buttons__item">
+                        <button class="address-buttons__button" type="button">Махачкала</button>
                     </li>
-                    <li class="address-buttons__item buttons-item">
-                        <button class="buttons-item__button" type="button">Дербент</button>
+                    <li class="address-buttons__item">
+                        <button class="address-buttons__button" type="button">Дербент</button>
                     </li>
-                    <li class="address-buttons__item buttons-item">
-                        <button class="buttons-item__button" type="button">Каспийск</button>
+                    <li class="address-buttons__item">
+                        <button class="address-buttons__button" type="button">Каспийск</button>
                     </li>
-                    <li class="address-buttons__item buttons-item">
-                        <button class="buttons-item__button" type="button">Хасавюрт</button>
+                    <li class="address-buttons__item">
+                        <button class="address-buttons__button" type="button">Хасавюрт</button>
                     </li>
                 </ul>
                 <ul class="catalog-address-list__cards catalog-address-cards">
